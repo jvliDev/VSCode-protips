@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML :></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="N_stiker.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styleHTML.css" />
+  </head>
+  <body>
+    <header>
+      <img src="VSCode.png" alt="VS Code" />
+      <h1>Visual pro tips</h1>
+    </header>
+
+    <div class="background-container">
+      <main style="row-gap: 3rem; display: flex; flex-direction: column">
+        <div class="title">
+          <h1>Tips para Visual Studio Code</h1>
+          <div style="display: flex; column-gap: 2rem; margin-top: 0.5rem">
+            <li>Huerta</li>
+            <li>Programacion 500</li>
+          </div>
+        </div>
+
+        <div class="article-main">
+          <p>
+            Bueno, no se me ocurre de que mas puedo hacer esta pagina, asi que a
+            falta de ideas pense "Oye, por que no hago una pagina de pro-tips de
+            Visual Studio Code?". Y pues bueno aqui estamos :D
+          </p>
+          <br />
+          <p>
+            Pero bueno, despues de todo puede que algunas de las cosas de aqui
+            les sirvan de algo (o al tez no, pero igual aqui tienen)
+          </p>
+          <center>
+            <img
+              src="General-Images/VSCode-screenshot.png"
+              alt="Captura de pantalla de una ventana de Visual Studio Code"
+              id="img-captura"
+            />
+          </center>
+          <h1>Construir estructura HTML con 1 solo caracter</h1>
+          <p>
+            Pues si, al parecer puedes hacer toda la estructura de una pagina
+            HTML utilizando solamente 1 caracter: <b>!</b>
+          </p>
+          <p>
+            Probablemnte ya conozcas el metodo usando
+            <span style="font-family: Cascadia Code; color: rgb(79, 211, 79)"
+              >HTML:5</span
+            >, y aunque es muy efectivo, hay un metodo mucho mas rapido que ese
+            para hacer la estructura HTML
+          </p>
+          <center>
+            <img
+              src="General-Images/1caracter-1.png"
+              alt="Editor de codigo: !"
+            />
+          </center>
+          <p>Posteriormente, solo basta con precionar <b>tab</b> y listo :D</p>
+          <center>
+            <img
+              src="General-Images/1caracter-2.png"
+              alt="Editor de codigo: Ahora el editor de codigo muestra una estructura completa de HTML"
+            />
+          </center>
+          <h1>Introducir una etiqueta dentro de otra</h1>
+          <p>
+            Hay una forma muy útil para poder escribir varias etiquetas e
+            introducirlas una dentro de otra.
+          </p>
+          <p>El formato es el siguiente:</p>
+          <br /><br />
+          <!-- ! Inicio Codigo HTML -->
+          <div class="codigo">
+            <pre><code>etiqueta>etiqueta2</code></pre>
+          </div>
+          <!-- ! Fin Codigo HTML-->
+          <br><br>
+          <p>
+            Tan solo hay que reemplazar etiqueta por una etiqueta y reemplazar
+            la etiqueta etiqueta2 por la etiqueta a meter dentro de la primera
+            etiqueta.<br /><br />Es decir, si queremos crear una etiqueta
+            section y meter dentro de ella otra etiqueta llamada article,
+            deberíamos escribir: section>article<br /><br />Si queremos ir más
+            allá y queremos meter un div dentro de la etiqueta section y dentro
+            de ese div un a, deberíamos escribir:
+          </p>
+          <br /><br />
+          <div class="codigo">
+            <pre><code>section>article>div>a</code></pre>
+          </div>
+          <br /><br />
+          <p>
+            Y, seguidamente, después de escribir la última etiqueta, presionar
+            la tecla tab.
+          </p>
+          <br><br>
+<!-- ! Inicio Codigo HTML -->
+<div class="codigo">
+<pre>
+<code>&lt;section&gt;
+  &lt;article&gt;
+    &lt;div&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/div&gt;
+  &lt;/article&gt;
+&lt;/section&gt;</code>
+</pre>
+</div>
+<!-- ! Fin Codigo HTML-->
+          <br><br>
+          <h1>Escribir dentro de una etiqueta</h1>
+          <p>Podemos escribir de forma rápida dentro de una etiqueta utilizando <b>{}</b>.</p>
+          </div>
+          
+          <!-- ! Inicio Codigo HTML -->
+          <div class="codigo">
+            <pre><code>etiqueta{texto}</code></pre>
+          </div>
+          <!-- ! Fin Codigo HTML -->
+          <p>Tan solo hay que reemplazar etiqueta por la <b>etiqueta</b> y texto, por el <b>texto</b> que queremos agregar dentro de la etiqueta.</p>
+          <p>Si queremos agregar el texto 'clic aquí' dentro de la etiqueta a, debemos poner:</p>
+          <!-- ! Inicio Codigo HTML -->
+          <div class="codigo">
+            <pre><code>a{clic aquí}</code></pre>
+          </div>
+          <!-- ! Fin Codigo HTML -->
+          <p>Y, seguidamente, presionar la tecla tab.</p>
+          <!-- ! Inicio Codigo HTML -->
+          <div class="codigo">
+          <pre><code>&lt;a href=""&gt;&lt;/a&gt;</pre></div>
+          <!-- ! Fin Codigo HTML-->
+
+          <h1>Extenciones para Visual Studio Code</h1>
+          <br>
+          <p>En VS Code, existe la posibilidad de instalar diferentes extenciones que permiten mejorar la productividad de los programadores</p>
+          <p>En este ocacion, les mostrare algunas de mis extenciones favoritas de VS Code :)</p>
+          
+          <div class="extencion-cont">
+            <img src="General-Images/Background.png" alt="">
+            <div>
+              <h2>Background</h2>
+              <h4>Katsute</h4>
+            </div>
+          </div>
+
+          <p>Esta extencion permite añadir múltiples imágenes de fondo para la ventana, los editores, las barras laterales o el panel. Cargue fondos desde un archivo o URL. Transición entre múltiples imágenes de fondo.</p>
+          <center><img src="General-Images/background-animated.gif" alt="Background Animated" id="img-captura"></center>
+          
+          <div class="extencion-cont">
+            <img src="General-Images/Notes.png" alt="">
+            <div>
+              <h2>Notes</h2>
+              <h4>Dion Munk</h4>
+            </div>
+          </div>
+          <p>Esta extencion te permite tomar notas dentro del propio Visual Studio Code. Las notas se escriben en Markdown y se almacenan como archivos .md dentro del directorio de almacenamiento de Notas.</p>
+          <center><img src="General-Images/notes-screenshot.png" alt="Captura de pantalla: VS Code usando Notes" id="img-captura"></center>
+          
+          <div class="extencion-cont">
+            <img src="General-Images/Bookmarks.png" alt="">
+            <div>
+              <h2>Bookmarks</h2>
+              <h4>Alessandro Fragnani</h4>
+            </div>
+          </div>
+          <p>Te ayuda a navegar en tu código, moviéndote entre posiciones importantes fácil y rápidamente. Te permite marcar y desmarcar posiciones en tu codigo, darles un nombre y saltar rapidamente entre las posiciones.</p>
+          <center><img src="General-Images/markbooks-capture.png" alt="" id="img-captura"></center>
+        </main>
+
+        <h1>Conclusiones</h1>
+        <p>Visual Studio Code es uno de los software mas versatiles a la hora de programar, y uno de los que mas herramientas y funcionalidades extras da a los programadores para el desarrollo web</p>
+        <p>El conocimineto de herramientas que agilizen el desarrollo de aplicaciones, seguramente te ayudara a mejorar tu productividad y ser mas eficiente cuendo estes realizando algun proyecto en VS Code</p>
+        
+        <br><br><br><br>
+        <p>NT: Tecnicamente mi pagina ya esta terinada en este punto, pero hasta ahora me doy ceunta de que me falto poner el video XD</p>
+        <p>ademas aprovechando que no creo que nadie vea esta parte, voy a poner otras cosas :></p>
+
+        <center>
+          <br>
+          <video width="640" height="360" controls>
+              <source src="General-Images/sata.andagi-64.mp4" type="video/mp4">
+              <p>No se pudo  mostrar el video, a lo mejor el video no se ve, o a lo mejor el que hizo esta pagina no le sabe</p>
+            </video>
+        </center>
+    </div>
+  </body>
+</html>
